@@ -9,6 +9,8 @@ packages = [{include = "task_manager"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 django = "^4.1.7"
+django-bootstrap4 = "^22.3"
+python-gettext = "^4.1"
 
 
 [build-system]

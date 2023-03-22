@@ -1,1 +1,11 @@
-<h1>Hello</h1>
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% translate "Task Manager" %}{% endblock %}
+
+{% block content %}
+
+<h1>{% translate "Hello" %}</h1>
+
+
+{% endblock %}
