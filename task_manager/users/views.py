@@ -19,7 +19,7 @@ class UserCrate(SuccessMessageMixin, CreateView):
     model = User
     template_name = 'form.html'
     form_class = UserForm
-    success_url = reverse_lazy('users')
+    success_url = reverse_lazy('login')
     success_message = _('User created successfully')
     extra_context = {'title': _('Create user'), 'button_text': _('Register')}
 
@@ -40,7 +40,7 @@ class UserDelete(AuthCheckMixin, UserPermissionCheckMixin,
                  DeleteCheckMixin, SuccessMessageMixin, DeleteView):
     model = User
     template_name = 'users/delete.html'
-    success_url = reverse_lazy('users')
+    success_url = reverse_lazy('home')
     success_message = _('User is successfully deleted')
     permission_url = reverse_lazy('users')
     protected_url = reverse_lazy('users')
