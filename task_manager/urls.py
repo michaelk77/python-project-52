@@ -8,21 +8,22 @@ Function views
     2. Add a URL to urlpatterns:  path('', views.home, name='home')
 Class-based views
     1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+    2. Add a URL to urlpatterns:  path('', Home.as_view()(), name='home')
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from task_manager import views
+from django.urls import path, include
+from task_manager.views import IndexView, UserLogin, UserLogout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='home'),
-    path('', views.index, name='users'),
-    path('', views.index, name='sign_up'),
-    path('', views.index, name='login'),
-
-    path('', views.index)
+    path('', IndexView.as_view(), name='home'),
+    path('users/', include("task_manager.users.urls")),
+    path('logout/', UserLogout.as_view(), name='logout'),
+    path('login/', UserLogin.as_view(), name='login'),
+    path("hh", IndexView.as_view(), name="statuses"),
+    path("hhh", IndexView.as_view(), name="labels"),
+    path("hhhh", IndexView.as_view(), name="tasks"),
 ]

@@ -1,5 +1,6 @@
 {% load i18n %}
 {% get_current_language as LANGUAGE_CODE %}
+{% load bootstrap4 %}
 
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
@@ -9,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block description %}{% endblock %}">
     <title>{% block title %}{% endblock %}</title>
-    {% load bootstrap4 %}
 </head>
 <body class="d-flex flex-column min-vh-100">
 <header>
@@ -52,7 +52,7 @@
             {% endif %}
         </ul>
     </div>
-</nav>
+    </nav>
 </header>
 <main class="container wrapper flex-grow-1">
     {% bootstrap_messages %}
