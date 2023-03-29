@@ -19,7 +19,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%c%!h&qpcs@g*@938hro2eej6d%w1@+m$341im$*4_p5$o)k@+'
+SECRET_KEY = 'django-insecure-%c%!h&qpcs@g*@938hro2eej6d%w1@+m$341im$' \
+             '*4_p5$o)k@+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     "bootstrap4",
     "task_manager",
     "task_manager.users",
+    "task_manager.statuses",
 ]
 
 MIDDLEWARE = [
@@ -55,7 +57,8 @@ AUTH_USER_MODEL = 'users.User'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation'
+                '.MinimumLengthValidator',
         "OPTIONS": {"min_length": 3}
     },
 ]
