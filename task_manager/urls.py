@@ -23,7 +23,7 @@ urlpatterns = [
     path('users/', include("task_manager.users.urls")),
     path('logout/', UserLogout.as_view(), name='logout'),
     path('login/', UserLogin.as_view(), name='login'),
-    path("statuses", include("task_manager.statuses.urls")),
-    path("tasks", include("task_manager.tasks.urls")),
-    path("hhhh", IndexView.as_view(), name="labels"),
+    path("statuses/", include("task_manager.statuses.urls")),
+    path("tasks/", include("task_manager.tasks.urls")),
+    path("labels/", include("task_manager.labels.urls")),
 ]

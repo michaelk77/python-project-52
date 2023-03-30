@@ -43,3 +43,12 @@ class AuthorDeletion(UserPassesTestMixin):
     def handle_no_permission(self):
         messages.error(self.request, self.author_message)
         return redirect(self.author_url)
+
+
+class Deletion:
+    def post(self, request, *args, **kwargs):
+        try:
+            return super().post(request, *args, **kwargs)
+        except ProtectedError:
+            messages.error(request, self.protected_message)
+            return redirect(self.protected_url)
