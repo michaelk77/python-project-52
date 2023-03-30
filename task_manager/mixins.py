@@ -34,3 +34,12 @@ class UserPermissionCheckMixin(UserPassesTestMixin):
     def handle_no_permission(self):
         messages.error(self.request, self.permission_message)
         return redirect(self.permission_url)
+
+
+class AuthorDeletion(UserPassesTestMixin):
+    def test_func(self):
+        return self.get_object().author == self.request.user
+
+    def handle_no_permission(self):
+        messages.error(self.request, self.author_message)
+        return redirect(self.author_url)
