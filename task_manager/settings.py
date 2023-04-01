@@ -11,16 +11,17 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+import dj_database_url
 
+load_dotenv()
+SECRET_KEY = os.getenv('SECRET_KEY')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%c%!h&qpcs@g*@938hro2eej6d%w1@+m$341im$' \
-             '*4_p5$o)k@+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -53,6 +54,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -88,11 +91,12 @@ WSGI_APPLICATION = 'task_manager.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        default='sqlite:///db.sqlite3',
+        conn_max_age=600,
+    )
 }
 
 # Password validation
@@ -124,7 +128,22 @@ LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 
 STATIC_URL = '/static/'
 
+STATICFILES_STORAGE = 'whitenoise.storage' \
+                      '.CompressedManifestStaticFilesStorage'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ROLLBAR = {
+    'access_token': os.getenv('ROLLBAR'),
+    'environment': 'development' if DEBUG else 'production',
+    'root': BASE_DIR,
+}
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://127.0.0.1',
+    'https://localhost',
+    'https://0.0.0.0',
+]
