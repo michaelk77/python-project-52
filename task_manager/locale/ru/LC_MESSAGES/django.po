@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-02 17:16+0200\n"
+"POT-Creation-Date: 2023-04-02 16:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,16 +57,12 @@ msgstr "Создать метку"
 
 #: task_manager/labels/views.py:30 task_manager/statuses/views.py:28
 #: task_manager/tasks/views.py:39
-#, fuzzy
-#| msgid "Create user"
 msgid "Create"
-msgstr "Регистрация"
+msgstr "Создать"
 
 #: task_manager/labels/views.py:39
-#, fuzzy
-#| msgid "User is successfully deleted"
 msgid "Label successfully changed"
-msgstr "Метка успешно удалена"
+msgstr "Метка успешно изменена"
 
 #: task_manager/labels/views.py:41
 msgid "Label change"
@@ -78,10 +74,8 @@ msgid "Change"
 msgstr "Сменить"
 
 #: task_manager/labels/views.py:51
-#, fuzzy
-#| msgid "User is successfully deleted"
 msgid "Label successfully deleted"
-msgstr "Метка успешно изменена"
+msgstr "Метка успешно удалена"
 
 #: task_manager/labels/views.py:53
 msgid "Label delete"
@@ -112,7 +106,7 @@ msgstr "Статусы"
 
 #: task_manager/statuses/views.py:27
 msgid "Status created successfully"
-msgstr "Статус успешно создан"
+msgstr "Пользователь успешно создан"
 
 #: task_manager/statuses/views.py:28
 #: task_manager/templates/statuses/index.html:12
@@ -120,10 +114,8 @@ msgid "Create status"
 msgstr "Создать статус"
 
 #: task_manager/statuses/views.py:36
-#, fuzzy
-#| msgid "Task successfully changed"
 msgid "Status successfully changed"
-msgstr "Задача успешно изменена"
+msgstr "Статус успешно изменён"
 
 #: task_manager/statuses/views.py:37
 msgid "Change status"
@@ -165,8 +157,6 @@ msgid "Executor"
 msgstr "Исполнитель"
 
 #: task_manager/tasks/models.py:45
-#, fuzzy
-#| msgid "Tasks"
 msgid "Task"
 msgstr "Задачи"
 
@@ -184,8 +174,6 @@ msgid "Task preview"
 msgstr "Просмотр задачи"
 
 #: task_manager/tasks/views.py:38
-#, fuzzy
-#| msgid "User created successfully"
 msgid "Task created successfully!"
 msgstr "Пользователь успешно создан"
 
@@ -195,11 +183,9 @@ msgstr "Создать задачу"
 
 #: task_manager/tasks/views.py:52
 msgid "Task successfully changed"
-msgstr "Задача успешно изменена"
+msgstr "Пользователь успешно удалён"
 
 #: task_manager/tasks/views.py:54
-#, fuzzy
-#| msgid "Task manager"
 msgid "Task change"
 msgstr "Менеджер задач"
 
@@ -305,8 +291,6 @@ msgid "User updated successfully"
 msgstr "Пользователь успешно изменён"
 
 #: task_manager/users/views.py:35
-#, fuzzy
-#| msgid "You do not have permission to delete this user"
 msgid "You do not have permission to update this user"
 msgstr "У вас нет прав на удаление этого пользователя"
 
@@ -319,8 +303,6 @@ msgid "User is successfully deleted"
 msgstr "Пользователь успешно удалён"
 
 #: task_manager/users/views.py:47
-#, fuzzy
-#| msgid "You do not have permission to delete this user"
 msgid "You not have permission to delete this user"
 msgstr "У вас нет прав на удаление этого пользователя"
 
