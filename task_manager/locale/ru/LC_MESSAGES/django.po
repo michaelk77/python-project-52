@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-02 16:44+0200\n"
+"POT-Creation-Date: 2023-04-02 17:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,10 @@ msgid "Create status"
 msgstr "Создать статус"
 
 #: task_manager/statuses/views.py:36
-msgstr "Статус успешно удален"
+#, fuzzy
+#| msgid "Task successfully changed"
+msgid "Status successfully changed"
+msgstr "Задача успешно изменена"
 
 #: task_manager/statuses/views.py:37
 msgid "Change status"
@@ -313,7 +316,7 @@ msgstr "Изменить пользователя"
 
 #: task_manager/users/views.py:44
 msgid "User is successfully deleted"
-msgstr "Пользователь успешно удален"
+msgstr "Пользователь успешно удалён"
 
 #: task_manager/users/views.py:47
 #, fuzzy
@@ -323,7 +326,7 @@ msgstr "У вас нет прав на удаление этого пользо�
 
 #: task_manager/users/views.py:48
 msgid "This user have project and cannot be deleted"
-msgstr "У этого пользователя есть проекты, он не может быть удален"
+msgstr "У этого пользователя есть проекты, он не может быть удалён"
 
 #: task_manager/users/views.py:49
 msgid "Delete user"
