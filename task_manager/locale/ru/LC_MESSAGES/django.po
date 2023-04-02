@@ -329,6 +329,3 @@ msgstr "Войти"
 #: task_manager/views.py:27 task_manager/views.py:30
 msgid "You are logged out"
 msgstr "Вы разлогинены"
-
-#~ msgid "Hello"
-#~ msgstr "Привет"
