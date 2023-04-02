@@ -46,4 +46,4 @@ class UserDelete(AuthCheckMixin, UserPermissionCheckMixin,
     protected_url = reverse_lazy('users')
     permission_message = _('You not have permission to delete this user')
     protected_message = _('This user have project and cannot be deleted')
-    extra_context = {'title': _('Delete user'), 'button_text': _('Delete')}
+    extra_context = {'title': _('Delete user'), 'button_text': _('Yes, delete')}

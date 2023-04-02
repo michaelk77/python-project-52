@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-02 15:26+0200\n"
+"POT-Creation-Date: 2023-04-02 16:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,9 +93,9 @@ msgstr "Удаление метку"
 #: task_manager/templates/statuses/index.html:32
 #: task_manager/templates/tasks/index.html:59
 #: task_manager/templates/tasks/list.html:50
-#: task_manager/templates/users/all.html:33 task_manager/users/views.py:49
+#: task_manager/templates/users/all.html:33
 msgid "Delete"
-msgstr "Да, удалить"
+msgstr "Удалить"
 
 #: task_manager/mixins.py:20
 msgid "You are not logged in! Please log in."
@@ -144,12 +144,11 @@ msgid "This status is used in tasks"
 msgstr "Этот статус используется в задачах"
 
 #: task_manager/statuses/views.py:48
-#, fuzzy
-#| msgid "Delete user"
 msgid "Delete status"
 msgstr "Удалить статус"
 
 #: task_manager/statuses/views.py:49 task_manager/tasks/views.py:69
+#: task_manager/users/views.py:49
 msgid "Yes, delete"
 msgstr "Да, удалить"
 
@@ -223,10 +222,8 @@ msgid "The task can be deleted only by its author"
 msgstr "Задачу может удалить только её автор."
 
 #: task_manager/tasks/views.py:68
-#, fuzzy
-#| msgid "Delete user"
 msgid "Delete task"
-msgstr "Удалить пользователя"
+msgstr "Удалить задачу"
 
 #: task_manager/templates/base.html:17 task_manager/views.py:12
 msgid "Task manager"
