@@ -287,7 +287,7 @@ msgstr "Изменить"
 
 #: task_manager/templates/users/all.html:15
 msgid "Username"
-msgstr "Пользователи"
+msgstr "Имя Пользователя"
 
 #: task_manager/templates/users/all.html:16
 msgid "Full name"
@@ -347,7 +347,7 @@ msgstr "Удалить пользователя"
 
 #: task_manager/views.py:19
 msgid "You are logged in"
-msgstr "Вы авторизованы"
+msgstr "Вы залогинены"
 
 #: task_manager/views.py:21
 msgid "Login"
@@ -355,7 +355,7 @@ msgstr "Вход"
 
 #: task_manager/views.py:22
 msgid "Enter"
-msgstr "Подтвердить"
+msgstr "Войти"
 
 #: task_manager/views.py:27 task_manager/views.py:30
 msgid "You are logged out"
