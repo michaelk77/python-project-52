@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-02 16:44+0200\n"
+"POT-Creation-Date: 2023-04-02 17:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,13 +81,10 @@ msgstr "Метка успешно удалена"
 msgid "Label delete"
 msgstr "Удаление метку"
 
-#: task_manager/labels/views.py:54 task_manager/templates/labels/index.html:35
-#: task_manager/templates/statuses/index.html:32
-#: task_manager/templates/tasks/index.html:59
-#: task_manager/templates/tasks/list.html:50
-#: task_manager/templates/users/all.html:33
-msgid "Delete"
-msgstr "Удалить"
+#: task_manager/labels/views.py:54 task_manager/statuses/views.py:49
+#: task_manager/tasks/views.py:69 task_manager/users/views.py:49
+msgid "Yes, delete"
+msgstr "Да, удалить"
 
 #: task_manager/mixins.py:20
 msgid "You are not logged in! Please log in."
@@ -132,11 +129,6 @@ msgstr "Этот статус используется в задачах"
 #: task_manager/statuses/views.py:48
 msgid "Delete status"
 msgstr "Удалить статус"
-
-#: task_manager/statuses/views.py:49 task_manager/tasks/views.py:69
-#: task_manager/users/views.py:49
-msgid "Yes, delete"
-msgstr "Да, удалить"
 
 #: task_manager/tasks/filter.py:15
 msgid "Only own tasks"
@@ -257,6 +249,14 @@ msgstr "Вы уверены, что хотите удалить"
 #: task_manager/templates/users/all.html:31 task_manager/users/views.py:36
 msgid "Update"
 msgstr "Изменить"
+
+#: task_manager/templates/labels/index.html:35
+#: task_manager/templates/statuses/index.html:32
+#: task_manager/templates/tasks/index.html:59
+#: task_manager/templates/tasks/list.html:50
+#: task_manager/templates/users/all.html:33
+msgid "Delete"
+msgstr "Удалить"
 
 #: task_manager/templates/users/all.html:15
 msgid "Username"
