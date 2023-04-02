@@ -303,7 +303,7 @@ msgstr "Фамилия"
 
 #: task_manager/users/views.py:23
 msgid "User created successfully"
-msgstr "Пользователь успешно создан"
+msgstr "Пользователь успешно зарегистрирован"
 
 #: task_manager/users/views.py:24
 msgid "Create user"
