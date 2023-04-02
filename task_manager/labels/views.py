@@ -51,5 +51,5 @@ class LabelDelete(AuthCheckMixin, SuccessMessageMixin, Deletion,
     success_message = _('Label successfully deleted')
     extra_context = {
         'title': _('Label delete'),
-        'button_text': _('Delete'),
+        'button_text': _('Yes, delete'),
     }
