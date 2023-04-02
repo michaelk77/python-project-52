@@ -167,7 +167,7 @@ msgstr "Просмотр задачи"
 
 #: task_manager/tasks/views.py:38
 msgid "Task created successfully!"
-msgstr "Пользователь успешно создан"
+msgstr "Задача успешно создана"
 
 #: task_manager/tasks/views.py:39 task_manager/templates/tasks/list.html:13
 msgid "Create task"
