@@ -94,7 +94,7 @@ msgstr "Вы не авторизованы! Пожалуйста, выполни
 #: task_manager/templates/tasks/index.html:36
 #: task_manager/templates/tasks/list.html:29
 msgid "Status"
-msgstr "Статусы"
+msgstr "Статус"
 
 #: task_manager/statuses/models.py:18 task_manager/statuses/views.py:19
 #: task_manager/templates/base.html:27
