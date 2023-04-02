@@ -203,7 +203,7 @@ msgstr "Создать задачу"
 #, fuzzy
 #| msgid "User is successfully deleted"
 msgid "Task successfully changed"
-msgstr "Пользователь успешно удален"
+msgstr "Пользователь успешно удалён"
 
 #: task_manager/tasks/views.py:54
 #, fuzzy
