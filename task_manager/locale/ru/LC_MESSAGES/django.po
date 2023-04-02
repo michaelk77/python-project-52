@@ -106,7 +106,7 @@ msgstr "Статусы"
 
 #: task_manager/statuses/views.py:27
 msgid "Status created successfully"
-msgstr "Пользователь успешно создан"
+msgstr "Статус успешно создан"
 
 #: task_manager/statuses/views.py:28
 #: task_manager/templates/statuses/index.html:12
