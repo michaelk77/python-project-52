@@ -48,10 +48,8 @@ msgid "Labels"
 msgstr "Метки"
 
 #: task_manager/labels/views.py:27
-#, fuzzy
-#| msgid "User is successfully deleted"
 msgid "Label successfully created"
-msgstr "Пользователь успешно удален"
+msgstr "Метка успешно создана"
 
 #: task_manager/labels/views.py:29 task_manager/templates/labels/index.html:13
 msgid "Create label"
@@ -68,7 +66,7 @@ msgstr "Регистрация"
 #, fuzzy
 #| msgid "User is successfully deleted"
 msgid "Label successfully changed"
-msgstr "Пользователь успешно удален"
+msgstr "Метка успешно удалена"
 
 #: task_manager/labels/views.py:41
 msgid "Label change"
@@ -83,7 +81,7 @@ msgstr "Сменить"
 #, fuzzy
 #| msgid "User is successfully deleted"
 msgid "Label successfully deleted"
-msgstr "Пользователь успешно удален"
+msgstr "Метка успешно изменена"
 
 #: task_manager/labels/views.py:53
 msgid "Label delete"
@@ -113,10 +111,8 @@ msgid "Statuses"
 msgstr "Статусы"
 
 #: task_manager/statuses/views.py:27
-#, fuzzy
-#| msgid "User created successfully"
 msgid "Status created successfully"
-msgstr "Пользователь успешно создан"
+msgstr "Статус успешно создан"
 
 #: task_manager/statuses/views.py:28
 #: task_manager/templates/statuses/index.html:12
@@ -124,20 +120,15 @@ msgid "Create status"
 msgstr "Создать статус"
 
 #: task_manager/statuses/views.py:36
-#, fuzzy
-#| msgid "User is successfully deleted"
-msgid "Status successfully changed"
-msgstr "Пользователь успешно удален"
+msgstr "Статус успешно удален"
 
 #: task_manager/statuses/views.py:37
 msgid "Change status"
 msgstr "Изменение статуса"
 
 #: task_manager/statuses/views.py:45
-#, fuzzy
-#| msgid "User is successfully deleted"
 msgid "Status successfully deleted"
-msgstr "Пользователь успешно удален"
+msgstr "Статус успешно удалён"
 
 #: task_manager/statuses/views.py:46
 msgid "This status is used in tasks"
@@ -200,10 +191,8 @@ msgid "Create task"
 msgstr "Создать задачу"
 
 #: task_manager/tasks/views.py:52
-#, fuzzy
-#| msgid "User is successfully deleted"
 msgid "Task successfully changed"
-msgstr "Пользователь успешно удалён"
+msgstr "Задача успешно изменена"
 
 #: task_manager/tasks/views.py:54
 #, fuzzy
@@ -212,10 +201,8 @@ msgid "Task change"
 msgstr "Менеджер задач"
 
 #: task_manager/tasks/views.py:64
-#, fuzzy
-#| msgid "User is successfully deleted"
 msgid "Task successfully deleted"
-msgstr "Пользователь успешно удален"
+msgstr "Задача успешно удалена"
 
 #: task_manager/tasks/views.py:65
 msgid "The task can be deleted only by its author"
