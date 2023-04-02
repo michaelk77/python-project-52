@@ -315,7 +315,7 @@ msgstr "Зарегистрировать"
 
 #: task_manager/users/views.py:33
 msgid "User updated successfully"
-msgstr "Пользователь успешно изменен"
+msgstr "Пользователь успешно изменён"
 
 #: task_manager/users/views.py:35
 #, fuzzy
