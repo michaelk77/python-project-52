@@ -99,7 +99,7 @@ msgstr "Удалить"
 
 #: task_manager/mixins.py:20
 msgid "You are not logged in! Please log in."
-msgstr "Вы не авторизованы! Пожалуйста авторизуйтесь."
+msgstr "Вы не авторизованы! Пожалуйста, выполните вход."
 
 #: task_manager/statuses/models.py:17 task_manager/tasks/models.py:26
 #: task_manager/templates/tasks/index.html:36
@@ -220,7 +220,7 @@ msgstr "Пользователь успешно удален"
 
 #: task_manager/tasks/views.py:65
 msgid "The task can be deleted only by its author"
-msgstr "Задачу может удалить только ее автор"
+msgstr "Задачу может удалить только её автор."
 
 #: task_manager/tasks/views.py:68
 #, fuzzy
@@ -275,7 +275,7 @@ msgstr "Начнем"
 #: task_manager/templates/tasks/del.html:14
 #: task_manager/templates/users/delete.html:12
 msgid "Are you sure you want to delete"
-msgstr "Вы уверены что хотите удалить?"
+msgstr "Вы уверены, что хотите удалить"
 
 #: task_manager/templates/labels/index.html:33
 #: task_manager/templates/statuses/index.html:30
@@ -359,7 +359,7 @@ msgstr "Войти"
 
 #: task_manager/views.py:27 task_manager/views.py:30
 msgid "You are logged out"
-msgstr "Вы вышли из системы"
+msgstr "Вы разлогинены"
 
 #~ msgid "Hello"
 #~ msgstr "Привет"
