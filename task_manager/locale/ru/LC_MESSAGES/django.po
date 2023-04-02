@@ -95,7 +95,7 @@ msgstr "Удаление метку"
 #: task_manager/templates/tasks/list.html:50
 #: task_manager/templates/users/all.html:33 task_manager/users/views.py:49
 msgid "Delete"
-msgstr "Удалить"
+msgstr "Да, удалить"
 
 #: task_manager/mixins.py:20
 msgid "You are not logged in! Please log in."
@@ -147,7 +147,7 @@ msgstr "Этот статус используется в задачах"
 #, fuzzy
 #| msgid "Delete user"
 msgid "Delete status"
-msgstr "Удалить пользователя"
+msgstr "Удалить статус"
 
 #: task_manager/statuses/views.py:49 task_manager/tasks/views.py:69
 msgid "Yes, delete"
