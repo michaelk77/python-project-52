@@ -132,7 +132,7 @@ msgstr "Удалить статус"
 
 #: task_manager/tasks/filter.py:15
 msgid "Only own tasks"
-msgstr "Только мои задачи"
+msgstr "Только свои задачи"
 
 #: task_manager/tasks/models.py:16
 msgid "Description"
